@@ -19,6 +19,7 @@ import ParticlesComponent from '../Components/ParticlesComponent';
 import { DiMongodb, DiReact, DiNodejsSmall } from "react-icons/di"
 import { SiExpress } from "react-icons/si"
 import 'animate.css';
+import ProjectDisplay from './ProjectDisplay';
 
 const Heromodule = () => {
   const [showpopups, setshowpopups] = useState(false)
@@ -31,8 +32,8 @@ const Heromodule = () => {
           <header className='flex justify-between w-full px-4 mt-4 max-w-screen-xl mx-auto'>
             <Logo />
             <div className='flex items-center gap-4 mx-4 mt-4'>
-            <a className='z-40' href="tel:+8398348394"><Phoneicon /></a>
-            <a className='z-40' href="whatsapp://send?abid=&text=Hello%2C%20World!"> <Whatsappicon /></a>
+              <a className='z-40' href="tel:+8398348394"><Phoneicon /></a>
+              <a className='z-40' href="whatsapp://send?abid=&text=Hello%2C%20World!"> <Whatsappicon /></a>
               <Whatsappicon />
             </div>
           </header>
@@ -59,23 +60,23 @@ const Heromodule = () => {
                 <a href="https://www.linkedin.com/in/jimil-v-soni-3382b42b0/" target="_blank"><Linkedinlogo /></a>
               </li>
               <li className="hover:scale-125 transition-transform duration-300 ">
-              <a href="https://x.com/Jimil_14" target="_blank">
-              <Twitterlogo />
-              </a>
+                <a href="https://x.com/Jimil_14" target="_blank">
+                  <Twitterlogo />
+                </a>
               </li>
               <li className="hover:scale-125 transition-transform duration-300 ">
-              <a href="https://www.instagram.com/jimilsoni.js/" target="_blank">
-                <Instagramlogo />
-              </a>
+                <a href="https://www.instagram.com/jimilsoni.js/" target="_blank">
+                  <Instagramlogo />
+                </a>
               </li>
               <li className="hover:scale-125 transition-transform duration-300 ">
-              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jimilsoni926@gmail.com" target="_blank">
-              <Maillogo />
-              </a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jimilsoni926@gmail.com" target="_blank">
+                  <Maillogo />
+                </a>
               </li>
               <li className="hover:scale-125 transition-transform duration-300 ">
                 <a href="https://github.com/jimil222">
-                <Githublogo />
+                  <Githublogo />
                 </a>
               </li>
             </ul>
@@ -90,7 +91,7 @@ const Heromodule = () => {
               <div className="flex flex-row items-center justify-between space-y-0 pb-2 border-b border-gray-700 p-4">
                 <h2 className="text-xl sm:text-2xl font-bold">About Me</h2>
                 <button
-                  className="flex items-center justify-center h-8 w-8 p-0 text-white hover:bg-gray-700 hover:rounded-full duration-200" 
+                  className="flex items-center justify-center h-8 w-8 p-0 text-white hover:bg-gray-700 hover:rounded-full duration-200"
                   onClick={() => setshowpopups(false)}
                 >
                   <span className="sr-only">Close</span>
@@ -148,6 +149,15 @@ const Heromodule = () => {
           </div>
         </Popup>
       </div>
+      <div className=' h-screen w-screen m-0 p-0 '>
+        <ProjectDisplay />
+      </div>
+      
+    
+     
+      
+
+
     </>
   );
 };
