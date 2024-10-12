@@ -39,25 +39,25 @@ const ParticlesComponent = (props) => {
       },
       fpsLimit: 120,
       interactivity: {
-        events: {
-          onClick: {
-            enable: true,
-            mode: "repulse",
-          },
-          onHover: {
-            enable: true,
-            mode: 'grab',
-          },
-        },
-        modes: {
-          push: {
-            distance: 200,
-            duration: 15,
-          },
-          grab: {
-            distance: 150,
-          },
-        },
+        // events: {
+        //   onClick: {
+        //     enable: true,
+        //     mode: "repulse",
+        //   },
+        //   onHover: {
+        //     enable: true,
+        //     mode: 'grab',
+        //   },
+        // },
+        // modes: {
+        //   push: {
+        //     distance: 200,
+        //     duration: 15,
+        //   },
+        //   grab: {
+        //     distance: 150,
+        //   },
+        // },
       },
       particles: {
         color: {
@@ -106,3 +106,4 @@ const ParticlesComponent = (props) => {
 };
 
 export default ParticlesComponent;
+

@@ -19,6 +19,7 @@ import ParticlesComponent from '../Components/ParticlesComponent';
 import { DiMongodb, DiReact, DiNodejsSmall } from "react-icons/di"
 import { SiExpress } from "react-icons/si"
 import 'animate.css';
+import SkillsSection from './Skillsection';
 import ProjectDisplay from './ProjectDisplay';
 
 const Heromodule = () => {
@@ -149,13 +150,19 @@ const Heromodule = () => {
           </div>
         </Popup>
       </div>
-      <div className=' h-screen w-screen m-0 p-0 '>
+      <div className=' h-screen w-screen m-0 p-0'>
         <ProjectDisplay />
       </div>
-      
-    
-     
-      
+
+
+      <div className="min-h-screen w-screen m-0 p-0 mt-16">
+        <SkillsSection />
+      </div>
+
+
+
+
+
 
 
     </>
