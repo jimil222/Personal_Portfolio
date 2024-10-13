@@ -21,6 +21,7 @@ import { SiExpress } from "react-icons/si"
 import 'animate.css';
 import SkillsSection from './Skillsection';
 import ProjectDisplay from './ProjectDisplay';
+import ContactForm from './ContactForm';
 
 const Heromodule = () => {
   const [showpopups, setshowpopups] = useState(false)
@@ -71,7 +72,7 @@ const Heromodule = () => {
                 </a>
               </li>
               <li className="hover:scale-125 transition-transform duration-300 ">
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jimilsoni926@gmail.com" target="_blank">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jimil4117@gmail.com" target="_blank">
                   <Maillogo />
                 </a>
               </li>
@@ -157,6 +158,10 @@ const Heromodule = () => {
 
       <div className="min-h-screen w-screen m-0 p-0 mt-16">
         <SkillsSection />
+      </div>
+
+      <div className="min-h-screen w-screen m-0 p-0 ">
+        <ContactForm />
       </div>
 
 
